@@ -18,6 +18,9 @@ body{
     background-position: center center;
 
 }
+.menu, .img, .Trapped, .Destroyer, #Container, .Storm, .Storm video, .Trapped video {
+    visibility: hidden;
+}
 
 .Navegação {
     justify-content: center;
