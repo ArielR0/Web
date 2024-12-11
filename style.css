@@ -4,6 +4,15 @@
    box-sizing: border-box;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+color: #000;
+    background: url(/imgs/BG!.jpg);
+    background-repeat: repeat;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+}
+
 
 .center{
     max-width: 1280px;
@@ -58,8 +67,8 @@ section.sobre{
     width: 1200px;
     height: 1200px; 
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #0044ff;
-    background-color:mediumblue
+    box-shadow: 0 0 0 4px #ffffff;
+    background-color:rgb(61, 61, 61)
    
 }
 
@@ -136,30 +145,65 @@ body{
     0 0 100px #2dc3ff; 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
-        text-align: center;
         height: auto;
+        align-items: center;
+        text-align: center;
     }
 
     .logo {
-        width: 80%;
+        width: 100%;
         margin: 0;
     }
 
     .menu {
         width: 100%;
-        text-align: center;
         padding-top: 10px;
+        text-align: center;
     }
 
     .menu a {
         margin-right: 10px;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .texto-sobre {
+        margin-top: 50px;
     }
 
     .texto-sobre h1 {
-        font-size: 30px;
+        font-size: 32px;
+    }
+
+    .texto-sobre p {
+        font-size: 14px;
+    }
+
+    .texto-sobre button {
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .extras {
+        width: 600px;
+        height: 600px;
+        bottom: -300px;
+        right: -300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 12px;
+    }
+
+    .texto-sobre h1 {
+        font-size: 24px;
     }
 
     .texto-sobre p {
@@ -168,65 +212,27 @@ body{
 
     .texto-sobre button {
         width: 80px;
-        height: 50px;
-    }
-
-    .social-media {
-        left: 50%;
-        top: 100px;
-        transform: translateX(-50%);
+        height: 40px;
+        font-size: 12px;
     }
 
     .extras {
+        width: 400px;
+        height: 400px;
         bottom: -200px;
         right: -200px;
-        width: 800px;
-        height: 800px;
     }
 
-    .bolhas span {
-        width: 20px;
-        height: 20px;
-    }
- }
- @media (max-width: 1279px) and (min-width: 768px) {
     header {
-        flex-direction: row;
-        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .center {
+        flex-direction: column;
+        padding: 10px;
     }
 
     .logo {
-        width: 40%;
-    }
-
-    .menu {
-        width: 55%;
-        text-align: right;
-        padding-top: 30px;
-    }
-
-    .texto-sobre h1 {
-        font-size: 40px;
-    }
-
-    .texto-sobre p {
-        font-size: 14px;
-    }
-
-    .social-media {
-        left: 520px;
-        top: 120px;
-    }
-
-    .extras {
-        bottom: -350px;
-        right: -350px;
-        width: 1000px;
-        height: 1000px;
-    }
-
-    .bolhas span {
-        width: 25px;
-        height: 25px;
+        width: 80%;
     }
 }
